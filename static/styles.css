@@ -1,0 +1,49 @@
+/* General reset for consistent styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+  }
+  
+  /* Carousel container */
+  .carousel-container {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #f9f9f9;
+    padding: 20px 0;
+    overflow: hidden;
+    z-index: 1000;
+  }
+  
+  /* Carousel styles */
+  .carousel {
+    display: flex;
+    gap: 20px;
+    animation: slide 50s linear infinite;
+  }
+  
+  /* Carousel images */
+  .carousel img {
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  /* Keyframes for infinite sliding */
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
